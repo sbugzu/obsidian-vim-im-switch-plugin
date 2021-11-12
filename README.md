@@ -1,5 +1,20 @@
 # Obsidian Vim IM Switch Plugin
 
+## 更新内容
+
+*切换真心有点慢，日志看了下在没有其它插件的情况下要 1.3s 左右，打开常用插件，大概在 2.3s 左右比 VIM 上性能差很多*
+
+支持使用多种切换工具，fcitx-remote/im-select/macism 等，同时把每次通过命令判断输入法状态，改为通过内部状态位判断，速度会快一些，但是可能出现不一致的情况，可能需要手动切换。
+
+Mac 下推荐使用 [macism](https://github.com/laishulu/macism/)，不需要失去焦点就能完成切换，但是需要获取系统权限。
+```
+path: /usr/local/bin/macism
+defaultInput: com.apple.keylayout.ABC
+CJKVInput: im.rime.inputmethod.Squirrel.Rime
+```
+
+输入法名字，一般直接使用不带参数的命令就能获取 `im-select`，`macism`
+
 ## 简介
 
 本插件可以让你在使用 [Obsidian](https://obsidian.md/) 的时候，在启动 Vim键绑定 后，能够自动切换输入法。
@@ -23,8 +38,4 @@
 
 ## 捐赠
 
-通过金钱来鞭策我吧。
-
-| 支付宝 | 微信支付 |
-|--------| ------- |
-|  ![支付宝收款码](./assets/alipay.jpg) | ![微信支付收款码](./assets/wechat_pay.jpg) |
+[obsidian-vim-im-switch-plugin](https://github.com/sbugzu/obsidian-vim-im-switch-plugin)
